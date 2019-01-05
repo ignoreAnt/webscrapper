@@ -47,6 +47,11 @@ class Scrapper {
 
             words.addAll(doc.body().text().toLowerCase().tokenize(regex))
 
+            // Calls the urls and get the urls on that page
+            // Much method would be to create a graph and then
+            // Do a BFS on that graph ensuring the loops are not traversed
+            // That would give a perfect solution. Current solution is approximate
+            // Solution
             Elements iLink = doc.select("a")
             for (Element element : iLink) {
                 def iLinkUrl = element.attr("abs:href")
