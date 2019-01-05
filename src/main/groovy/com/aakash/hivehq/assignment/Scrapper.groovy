@@ -1,4 +1,4 @@
-package com.aakash.hivehq.assignment
+package com.aakash.hivehq.assignment;
 
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
